@@ -43,7 +43,7 @@ extension SimpleListViewController {
         
         let cellRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, Int> { (cell, indexPath, item) in
             var content = cell.defaultContentConfiguration()
-            content.text = "\(item)"
+            content.text = "Value of item: \(item)"
             cell.contentConfiguration = content
         }
         
